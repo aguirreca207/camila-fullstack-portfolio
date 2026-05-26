@@ -166,12 +166,19 @@ export function ProjectsSection() {
                 ))}
               </div>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <Button asChild variant="premium">
-                  <Link href={selected.demoUrl} target="_blank" rel="noreferrer">
+                {selected.demoUrl ? (
+                  <Button asChild variant="premium">
+                    <Link href={selected.demoUrl} target="_blank" rel="noreferrer">
+                      <ExternalLink className="h-4 w-4" />
+                      Ver demo
+                    </Link>
+                  </Button>
+                ) : (
+                  <Button variant="premium" disabled>
                     <ExternalLink className="h-4 w-4" />
-                    Ver demo
-                  </Link>
-                </Button>
+                    Demo próximamente
+                  </Button>
+                )}
                 <Button asChild variant="outline">
                   <Link href={selected.githubUrl} target="_blank" rel="noreferrer">
                     <Github className="h-4 w-4" />

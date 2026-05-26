@@ -53,6 +53,22 @@ export const services: Service[] = [
 
 export const projects: Project[] = [
   {
+    title: "Mundo Mascotas",
+    category: "Frontend",
+    summary:
+      "Frontend web para una plataforma de mascotas con estructura de tienda, adopciones y conexión con API.",
+    impact: "Proyecto real publicado en GitHub con evolución funcional y arquitectura organizada",
+    problem:
+      "El proyecto necesitaba una interfaz clara para presentar productos, adopciones y contenido relacionado con mascotas.",
+    solution:
+      "Desarrollé la estructura frontend, páginas principales, organización de assets y conexión inicial con módulos de API/backend.",
+    features: ["Home de tienda", "Sección de adopciones", "Estructura multipágina", "Integración API"],
+    stack: ["HTML", "CSS", "JavaScript", "API", "GitHub"],
+    status: "Case study",
+    year: "2026",
+    githubUrl: "https://github.com/aguirreca207/mundo-mascotas-frontend"
+  },
+  {
     title: "Finora Analytics",
     category: "Full Stack",
     summary: "Dashboard financiero full stack con métricas, filtros, autenticación y visualización de KPIs.",
