@@ -66,6 +66,7 @@ export const projects: Project[] = [
     stack: ["HTML", "CSS", "JavaScript", "API", "GitHub"],
     status: "Case study",
     year: "2026",
+    demoUrl: "https://mundo-mascotas-frontend.vercel.app",
     githubUrl: "https://github.com/aguirreca207/mundo-mascotas-frontend"
   },
   {
