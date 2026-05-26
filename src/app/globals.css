@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0b0f19;
+  --surface: rgba(255, 255, 255, 0.72);
+  --muted: #64748b;
+  --primary: #176a74;
+  --secondary: #43b8ba;
+  --accent: #eb6e25;
+  --border: rgba(15, 23, 42, 0.12);
+  --radius: 18px;
+  --font-sans: "Inter", "Satoshi", "Montserrat", ui-sans-serif, system-ui, sans-serif;
+}
+
+.dark {
+  --background: #0b0f19;
+  --foreground: #f9fafb;
+  --surface: rgba(17, 24, 39, 0.66);
+  --muted: #9ca3af;
+  --border: rgba(249, 250, 251, 0.12);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-sans);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+  background: var(--background);
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 18% 8%, color-mix(in srgb, var(--secondary) 24%, transparent), transparent 30rem),
+    radial-gradient(circle at 86% 12%, color-mix(in srgb, var(--accent) 18%, transparent), transparent 24rem),
+    linear-gradient(180deg, var(--background), var(--background));
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  letter-spacing: 0;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--secondary) 42%, transparent);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--primary), var(--accent));
+  border: 3px solid var(--background);
+  border-radius: 999px;
+}
+
+.noise {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.85'/%3E%3C/svg%3E");
+}
+
+.glass {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(22px);
+}
+
+.section-pad {
+  padding: 112px 24px;
+}
+
+.container-xl {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.grid-mask {
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--foreground) 9%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--foreground) 9%, transparent) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(circle at center, black, transparent 72%);
+}
+
+@media (max-width: 768px) {
+  .section-pad {
+    padding: 84px 18px;
+  }
+}
