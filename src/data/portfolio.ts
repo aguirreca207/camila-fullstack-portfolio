@@ -72,16 +72,19 @@ export const projects: Project[] = [
   {
     title: "Finora Analytics",
     category: "Full Stack",
-    summary: "Dashboard financiero full stack con métricas, filtros, autenticación y visualización de KPIs.",
-    impact: "Panel listo para decisiones en tiempo real",
-    problem: "Los datos financieros estaban dispersos entre hojas de cálculo y reportes manuales.",
-    solution: "Construí una app centralizada con dashboard, API, estado de sesión y vistas filtrables.",
-    features: ["Auth", "KPIs dinámicos", "Filtros por periodo", "Charts responsive"],
-    stack: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "TailwindCSS"],
-    status: "Case study",
+    summary:
+      "SaaS financiero full stack con autenticación, PostgreSQL real, métricas dinámicas, charts premium y demo pública.",
+    impact: "Proyecto principal de portfolio con producto, diseño, backend, base de datos y deploy completo",
+    problem:
+      "Un dashboard financiero necesita presentar datos complejos de forma clara, confiable y visualmente premium.",
+    solution:
+      "Construí una aplicación completa con Next.js, Auth.js, Prisma, Supabase PostgreSQL, APIs protegidas y visualización interactiva.",
+    features: ["Login real", "Supabase PostgreSQL", "APIs protegidas", "KPIs dinámicos", "Charts responsive"],
+    stack: ["Next.js", "TypeScript", "Auth.js", "Prisma", "Supabase", "Recharts"],
+    status: "Live",
     year: "2026",
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com"
+    demoUrl: "https://finora-analytics.vercel.app",
+    githubUrl: "https://github.com/aguirreca207/finora-analytics"
   },
   {
     title: "Reserva Studio",
