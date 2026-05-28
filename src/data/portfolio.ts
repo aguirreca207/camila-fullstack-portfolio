@@ -54,17 +54,17 @@ export const services: Service[] = [
 export const projects: Project[] = [
   {
     title: "Mundo Mascotas",
-    category: "Frontend",
+    category: "Full Stack",
     summary:
-      "Frontend web para una plataforma de mascotas con estructura de tienda, adopciones y conexión con API.",
-    impact: "Proyecto real publicado en GitHub con evolución funcional y arquitectura organizada",
+      "Aplicación web Django para gestión de mascotas, citas, tienda, servicios, adopciones, usuarios y panel administrativo.",
+    impact: "Proyecto académico completo desplegado en Vercel con backend Django, SQLite, templates y módulos funcionales",
     problem:
-      "El proyecto necesitaba una interfaz clara para presentar productos, adopciones y contenido relacionado con mascotas.",
+      "El proyecto necesitaba centralizar servicios de mascotas en una plataforma clara: registro, perfil, tienda, citas, servicios y adopciones.",
     solution:
-      "Desarrollé la estructura frontend, páginas principales, organización de assets y conexión inicial con módulos de API/backend.",
-    features: ["Home de tienda", "Sección de adopciones", "Estructura multipágina", "Integración API"],
-    stack: ["HTML", "CSS", "JavaScript", "API", "GitHub"],
-    status: "Case study",
+      "Desarrollé una aplicación Django con modelos, vistas, templates, autenticación, base SQLite, estáticos y despliegue serverless en Vercel.",
+    features: ["Auth y perfil", "Gestión de mascotas", "Tienda y pedidos", "Citas y servicios", "Adopciones"],
+    stack: ["Django", "Python", "SQLite", "HTML", "CSS", "JavaScript"],
+    status: "Live",
     year: "2026",
     demoUrl: "https://mundo-mascotas-frontend.vercel.app",
     githubUrl: "https://github.com/aguirreca207/mundo-mascotas-frontend"
