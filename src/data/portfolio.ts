@@ -87,18 +87,29 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/aguirreca207/finora-analytics"
   },
   {
-    title: "Reserva Studio",
+    title: "ETIKA Flow AI",
     category: "SaaS",
-    summary: "Plataforma de reservas para estudios creativos con calendario, disponibilidad y panel admin.",
-    impact: "Flujo de reserva claro de punta a punta",
-    problem: "El proceso de agenda dependía de mensajes manuales y confirmaciones repetidas.",
-    solution: "Diseñé una experiencia self-service con backend para disponibilidad y gestión.",
-    features: ["Calendario", "Panel admin", "Estados de reserva", "Emails transaccionales"],
-    stack: ["React", "Next.js", "Supabase", "Server Actions", "Resend"],
-    status: "In progress",
+    summary:
+      "CRM full-stack premium para seguros e inmigracion con Auth.js, Neon PostgreSQL, Prisma, workflows reales, AI Copilot, documentos, tareas, automatizaciones y dashboard operacional.",
+    impact: "Producto SaaS enterprise listo para entrevistas tecnicas y portfolio profesional",
+    problem:
+      "Equipos de seguros, ACA e inmigracion necesitan centralizar leads, clientes, documentos, tareas, seguimiento comercial, renovaciones y acciones de agentes sin depender de hojas de calculo.",
+    solution:
+      "Construí una plataforma Next.js full-stack con APIs protegidas, roles, base de datos real, pipeline persistente, Client 360, AI Copilot con fallback local, WhatsApp/Twilio-ready, Supabase Storage-ready y pruebas Playwright.",
+    features: [
+      "Auth y roles",
+      "CRM pipeline",
+      "Client 360",
+      "AI Copilot",
+      "Document Center",
+      "Automations"
+    ],
+    stack: ["Next.js", "TypeScript", "Prisma", "Neon", "Auth.js", "OpenAI"],
+    status: "Live",
     year: "2026",
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com"
+    image: "/projects/etika-flow-ai-dashboard.png",
+    demoUrl: "https://etika-flow-ai.vercel.app",
+    githubUrl: "https://github.com/aguirreca207/etika-flow-ai"
   },
   {
     title: "TaskFlow OS",

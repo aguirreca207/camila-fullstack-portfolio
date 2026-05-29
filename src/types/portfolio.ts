@@ -26,6 +26,7 @@ export type Project = {
   stack: string[];
   status: "Live" | "In progress" | "Case study";
   year: string;
+  image?: string;
   demoUrl?: string;
   githubUrl: string;
 };

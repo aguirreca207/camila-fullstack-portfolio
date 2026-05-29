@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight, ExternalLink, Github, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { projects } from "@/data/portfolio";
@@ -69,6 +70,17 @@ export function ProjectsSection() {
                 onClick={() => setSelected(project)}
               >
                 <Card className="group h-full overflow-hidden p-7 transition duration-500 hover:-translate-y-1 hover:border-accent/50">
+                  {project.image ? (
+                    <div className="relative mb-7 aspect-[16/9] overflow-hidden rounded-2xl border border-[var(--border)] bg-foreground/5">
+                      <Image
+                        src={project.image}
+                        alt={`${project.title} screenshot`}
+                        fill
+                        className="object-cover object-top transition duration-700 group-hover:scale-[1.03]"
+                        sizes="(min-width: 768px) 50vw, 100vw"
+                      />
+                    </div>
+                  ) : null}
                   <div className="mb-10 flex items-start justify-between gap-4">
                     <div className="flex flex-wrap gap-2">
                       <Badge>{project.category}</Badge>
@@ -133,6 +145,17 @@ export function ProjectsSection() {
                 </Button>
               </div>
               <h3 className="mt-6 text-4xl font-semibold">{selected.title}</h3>
+              {selected.image ? (
+                <div className="relative mt-6 aspect-[16/9] overflow-hidden rounded-2xl border border-[var(--border)] bg-foreground/5">
+                  <Image
+                    src={selected.image}
+                    alt={`${selected.title} screenshot`}
+                    fill
+                    className="object-cover object-top"
+                    sizes="(min-width: 768px) 768px, 100vw"
+                  />
+                </div>
+              ) : null}
               <p className="mt-4 leading-8 text-muted">{selected.summary}</p>
               <div className="mt-8 grid gap-4 md:grid-cols-2">
                 <div className="rounded-2xl border border-[var(--border)] p-5">
