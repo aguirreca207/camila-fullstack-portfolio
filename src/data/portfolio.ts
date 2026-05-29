@@ -66,6 +66,7 @@ export const projects: Project[] = [
     stack: ["Django", "Python", "SQLite", "HTML", "CSS", "JavaScript"],
     status: "Live",
     year: "2026",
+    image: "/projects/mundo-mascotas-dashboard.jpg",
     demoUrl: "https://mundo-mascotas-frontend.vercel.app",
     githubUrl: "https://github.com/aguirreca207/mundo-mascotas-frontend"
   },
@@ -83,6 +84,7 @@ export const projects: Project[] = [
     stack: ["Next.js", "TypeScript", "Auth.js", "Prisma", "Supabase", "Recharts"],
     status: "Live",
     year: "2026",
+    image: "/projects/finora-analytics-dashboard.jpg",
     demoUrl: "https://finora-analytics.vercel.app",
     githubUrl: "https://github.com/aguirreca207/finora-analytics"
   },
