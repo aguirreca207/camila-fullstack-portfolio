@@ -105,10 +105,9 @@ export const projects: Project[] = [
       "Automations"
     ],
     stack: ["Next.js", "TypeScript", "Prisma", "Neon", "Auth.js", "OpenAI"],
-    status: "Live",
+    status: "Case study",
     year: "2026",
     image: "/projects/etika-flow-ai-dashboard.png",
-    demoUrl: "https://etika-flow-ai.vercel.app",
     githubUrl: "https://github.com/aguirreca207/etika-flow-ai"
   },
   {
