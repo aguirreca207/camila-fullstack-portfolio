@@ -87,8 +87,8 @@ export function ProjectsSection() {
                       <Badge>{project.status}</Badge>
                       <Badge>{project.year}</Badge>
                     </div>
-                    <span className="grid h-10 w-10 place-items-center rounded-full bg-foreground text-background transition group-hover:rotate-45">
-                      <ArrowUpRight className="h-4 w-4" />
+                    <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-foreground text-background shadow-[0_16px_40px_rgba(67,184,186,0.18)] transition duration-300 group-hover:-translate-y-0.5 group-hover:bg-accent group-hover:text-white">
+                      <ArrowUpRight className="h-4 w-4 transition duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                     </span>
                   </div>
                   <h3 className="text-3xl font-semibold tracking-normal">{project.title}</h3>
@@ -124,7 +124,8 @@ export function ProjectsSection() {
             exit={{ opacity: 0 }}
           >
             <motion.div
-              className="glass max-h-[86vh] w-full max-w-3xl overflow-y-auto rounded-[24px] p-7"
+              data-lenis-prevent
+              className="glass max-h-[86vh] w-full max-w-3xl touch-pan-y overflow-y-auto overscroll-contain rounded-[24px] p-7"
               initial={{ opacity: 0, y: 24, scale: 0.96 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 24, scale: 0.96 }}
