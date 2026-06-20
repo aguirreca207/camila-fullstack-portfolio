@@ -127,7 +127,7 @@ export const projects: Project[] = [
     stack: ["Next.js", "React", "TypeScript", "OpenAI", "Three.js", "Zustand"],
     status: "Case study",
     year: "2026",
-    image: "/projects/aether-ai-preview.svg",
+    image: "/projects/aether-ai-preview-real.png",
     demoUrl: "https://aether-ai-portfolio-flagship-projec.vercel.app",
     githubUrl: "https://github.com/aguirreca207/Eether-ai"
   },
