@@ -128,6 +128,7 @@ export const projects: Project[] = [
     status: "Case study",
     year: "2026",
     image: "/projects/aether-ai-preview.svg",
+    demoUrl: "https://aether-ai-portfolio-flagship-projec.vercel.app",
     githubUrl: "https://github.com/aguirreca207/Eether-ai"
   },
   {
