@@ -71,6 +71,30 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/aguirreca207/mundo-mascotas-frontend"
   },
   {
+    title: "Voxora English",
+    category: "Mobile",
+    summary:
+      "Aplicación móvil Flutter para aprender inglés con álbumes de frases reales, práctica diaria, voz, lectura guiada, retos de memoria y evaluación en chat.",
+    impact: "Producto móvil de portfolio con UX premium, arquitectura local, práctica interactiva y flujo real de aprendizaje",
+    problem:
+      "Los estudiantes hispanohablantes necesitan practicar inglés en contexto, no solo memorizar tarjetas aisladas o repetir frases sin seguimiento.",
+    solution:
+      "Construí una app Android con Flutter y Riverpod que organiza frases por álbum, genera sesiones de práctica, corrige respuestas de forma flexible, guarda progreso local y conecta lectura, retos y chat de evaluación.",
+    features: [
+      "Álbumes de conversación",
+      "Práctica con voz y escritura",
+      "Lectura Viva",
+      "Retos por tiempo",
+      "Corrección flexible",
+      "Progreso local"
+    ],
+    stack: ["Flutter", "Dart", "Riverpod", "SharedPreferences", "Android", "Kotlin"],
+    status: "Case study",
+    year: "2026",
+    image: "/projects/voxora-english-mobile.png",
+    githubUrl: "https://github.com/aguirreca207/voxora-english"
+  },
+  {
     title: "Finora Analytics",
     category: "Full Stack",
     summary:

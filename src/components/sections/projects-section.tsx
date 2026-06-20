@@ -17,6 +17,7 @@ const filters = [
   "All",
   "Frontend",
   "Full Stack",
+  "Mobile",
   "SaaS",
   "Dashboard",
   "Landing Page",

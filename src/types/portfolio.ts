@@ -12,6 +12,7 @@ export type Project = {
   category:
     | "Frontend"
     | "Full Stack"
+    | "Mobile"
     | "SaaS"
     | "Dashboard"
     | "Landing Page"
