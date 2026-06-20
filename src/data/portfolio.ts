@@ -114,6 +114,23 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/aguirreca207/etika-flow-ai"
   },
   {
+    title: "AETHER AI",
+    category: "SaaS",
+    summary:
+      "Sistema operativo de inteligencia artificial con command center, AI Copilot, módulos analíticos, memoria, voz y experiencia 3D futurista.",
+    impact: "Proyecto insignia de portfolio para demostrar arquitectura frontend avanzada, producto AI, motion design y experiencia interactiva",
+    problem:
+      "Las experiencias AI suelen sentirse genéricas o desconectadas; el reto era crear una interfaz convincente, modular y visualmente memorable para explorar flujos inteligentes.",
+    solution:
+      "Construí una aplicación Next.js con App Router, TypeScript, módulos feature-based, estado global, API route para OpenAI con fallback local, React Three Fiber y animaciones premium.",
+    features: ["AI Copilot", "Command center", "Voice interface", "Memory vault", "3D core", "Analytics modules"],
+    stack: ["Next.js", "React", "TypeScript", "OpenAI", "Three.js", "Zustand"],
+    status: "Case study",
+    year: "2026",
+    image: "/projects/aether-ai-preview.svg",
+    githubUrl: "https://github.com/aguirreca207/Eether-ai"
+  },
+  {
     title: "TaskFlow OS",
     category: "Dashboard",
     summary: "SaaS de gestión de tareas con tableros, prioridades, perfiles y experiencia responsive.",
