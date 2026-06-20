@@ -55,12 +55,14 @@ const voxoraFlow = [
   }
 ];
 
-function VoxoraMark({ compact = false }: { compact?: boolean }) {
+function VoxoraMark({ compact = false, feature = false }: { compact?: boolean; feature?: boolean }) {
   return (
     <span
       className={cn(
         "relative grid shrink-0 place-items-center overflow-hidden rounded-[10px] bg-[linear-gradient(135deg,#7DDCC7,#8ECDF8_52%,#E9D5FF)] shadow-[0_12px_24px_rgba(17,24,39,0.12)]",
-        compact ? "h-8 w-8" : "h-11 w-11"
+        compact && "h-8 w-8",
+        feature && "h-12 w-12 rounded-[13px]",
+        !compact && !feature && "h-11 w-11"
       )}
     >
       <span className="absolute left-2 top-2 h-2.5 w-2.5 rounded-full bg-white/40" />
@@ -86,9 +88,8 @@ function ProjectPreview({ project, compact = false }: { project: Project; compac
         )}
       >
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_18%,#7DDCC755,transparent_30%),radial-gradient(circle_at_86%_18%,#FF8FA344,transparent_28%),linear-gradient(135deg,#FFF7E8,#F8EDFF_58%,#EAF8FF)]" />
-        <div className="absolute left-5 top-5 z-10 flex items-center gap-2 rounded-full border border-white/70 bg-white/85 py-1 pl-1 pr-3 text-xs font-semibold text-[#111827] shadow-sm backdrop-blur">
-          <VoxoraMark compact />
-          <span>Voxora English</span>
+        <div className="absolute left-5 top-5 z-10 rounded-full border border-white/70 bg-white/85 px-3 py-1 text-xs font-semibold text-[#111827] shadow-sm backdrop-blur">
+          Flutter Android
         </div>
         <div className="absolute right-5 top-5 z-10 rounded-full bg-[#111827] px-3 py-1 text-xs font-semibold text-white shadow-sm">
           Learning app
@@ -97,7 +98,14 @@ function ProjectPreview({ project, compact = false }: { project: Project; compac
           <div className="hidden h-full flex-col justify-end gap-3 sm:flex">
             <div className="rounded-2xl border border-white/70 bg-white/80 p-4 shadow-[0_18px_50px_rgba(17,24,39,0.12)]">
               <p className="text-xs font-semibold text-[#7C6F86]">Ruta de aprendizaje</p>
-              <p className="mt-2 text-2xl font-bold leading-tight text-[#111827]">Voxora English</p>
+              <div className="mt-2 flex items-center gap-3">
+                <VoxoraMark feature />
+                <p className="text-2xl font-bold leading-tight text-[#111827]">
+                  Voxora
+                  <br />
+                  English
+                </p>
+              </div>
               <p className="mt-2 text-xs leading-5 text-[#7C6F86]">
                 Albums, practice, reading and chat evaluation in one daily flow.
               </p>
